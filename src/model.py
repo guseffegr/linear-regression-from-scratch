@@ -42,7 +42,7 @@ class LinearRegressionScratch:
             d_w = (1 / m) * X.T @ (y_hat - y) # Compute gradients of MSE loss
             d_b = (1 / m) * np.sum(y_hat - y)
             
-            if self.l2_lambda > 0:
+            if self.l2_lambda > 0: # Add L2 regularization to weight gradient (does not apply to bias)
                 d_w += (self.l2_lambda / m) * self.w
 
             self.w -= self.alpha * d_w # Gradient descent update
@@ -50,7 +50,7 @@ class LinearRegressionScratch:
 
             cost = (1 / (m * 2)) * np.sum((y_hat - y) ** 2)
 
-            if self.l2_lambda > 0: # Add L2 regularization to weight gradient (does not apply to bias)
+            if self.l2_lambda > 0: # Add L2 penalty to cost (bias is not regularized)
                 cost += (self.l2_lambda / (2 * m)) * np.sum(self.w ** 2)
                 
             self.cost_history.append(cost)
