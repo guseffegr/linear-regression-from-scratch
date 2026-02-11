@@ -81,6 +81,4 @@ offers full transparency and educational value.
 
 ## How to run
 
-1. Clone the repository
-2. Install dependencies: `numpy, pandas, matplotlib, scikit-learn`
-3. Run the notebook in `notebooks/`
+pip install -r requirements.txt
