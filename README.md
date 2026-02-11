@@ -60,8 +60,8 @@ overfitting and that feature engineering is the dominant factor.
 
 | Model | Train RMSE | Validation RMSE | Test RMSE |
 |------|-----------|-----------------|-----------|
-| Scratch (GD) | ~0.688 | ~0.712 | ~0.681 |
-| Scikit-learn | ~0.675 | ~0.704 | ~0.666 |
+| Scratch (GD) | 0.687 | 0.710 | 0.678 |
+| Scikit-learn | 0.665 | 0.693 | 0.655 |
 
 ## Visualizations
 
