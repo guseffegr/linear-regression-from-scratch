@@ -21,6 +21,7 @@ The project uses the **California Housing** dataset from scikit-learn.
 │   └── plotting.py       # Visualization utilities
 ├── notebooks/
 │   └── linear_regression_from_scratch.ipynb
+├── requirements.txt
 └── README.md
 
 ## Methodology
